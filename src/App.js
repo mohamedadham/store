@@ -162,15 +162,15 @@ handleProduct=(id)=>{
     <div className="App">
      <header>
            
-               <Link to='/' ><h2>Mobile Store</h2></Link>
-             <Link to='/products' ><h2>Products</h2></Link>
+               <Link to='/store' ><h2>Mobile Store</h2></Link>
+             <Link to='/store/products' ><h2>Products</h2></Link>
            
                  <Link to='/cart'><FontAwesomeIcon style={{color:'white',fontSize:'4em'}} icon={faShoppingCart} /> </Link>
            
             </header>
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/products" exact   render={(props)=>
+        <Route path="/store" exact component={Home} />
+        <Route path="/store/products" exact   render={(props)=>
            
                 <div className="menu-items">
                      
@@ -180,7 +180,7 @@ handleProduct=(id)=>{
         
                 }/>
                 
-                 <Route path={`/products/:id`}  render={(props)=> <ProductDetails {...props} handleCart={this.handleCart} product={product}/>} />
+                 <Route path={`store/products/:id`}  render={(props)=> <ProductDetails {...props} handleCart={this.handleCart} product={product}/>} />
          <Route path="/cart" render={()=>
             <div className="cart-items">
                 <h2 className="shoppingTxt">Shopping Cart</h2>

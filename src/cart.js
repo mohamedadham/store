@@ -18,7 +18,7 @@ class Cart extends React.Component {
                 <div className="cart">
                
                 
-                <Link to={`products/${this.props.item.itemId}`}> <h2>{this.props.item.item.name }</h2> </Link>
+                <Link to={`store/products/${this.props.item.itemId}`}> <h2>{this.props.item.item.name }</h2> </Link>
                  
                 <div className="cart-description">
                     <div className="cart-left">
