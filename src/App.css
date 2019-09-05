@@ -1,12 +1,40 @@
 .App {
   text-align: center;
 }
+img, embed, object, video{
+        max-width: 100%
+        } 
+        a, button{
+        min-width:48px;
+        min-height:48px;
+        padding:1.5em;
+        }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+header{
+   background: #1bb4dd;
+  color: white;
+  padding:3vmin 1rem;
+  text-align: center;
+  margin: 0 0 8vmin 0;
+    display: flex;
+    align-content:space-between;
+    justify-content: space-around;
+ 
 }
+.menu-items{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:90%;
+    margin:5%
+}
+.item{
+ 
+    
+    text-align: left;
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -30,4 +58,58 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.cart-items{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin:5%;
+    align-items: left;
+}
+.cart{
+    text-align: left;
+    
+}
+.cart-items .shoppingTxt{
+    text-align: left;
+    font-size:35px;
+}
+.total, .item-price{
+    text-align: right;
+    display: inline;
+    
+}
+.total{
+    margin-top:15px;
+}
+.cart-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+.cart img,.cart p{
+    width:15vw;
+    display: inline;
+    vertical-align: top;
+    font-size: 20px;
+    
+}
+
+.cart-description{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+.cart-left{
+    width:80%;
+}
+li{
+    display:inline;
+    list-style: none;
+}
+ a{
+    text-decoration: none;
 }
