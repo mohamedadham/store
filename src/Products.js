@@ -14,7 +14,7 @@ function Products({item,match,handleClick}) {
                     <p>{item.item.description } </p>
                     <p>${item.store.cost }</p>
                    <li>
-                        <Link to={`${match.url}/${item.itemId}`}> View </Link>
+                        <Link to={`/products/${item.itemId}`}> View </Link>
                         </li>
                 <button onClick={()=>{handleClick(item)}}>Add to cart</button>
      

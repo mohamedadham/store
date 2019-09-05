@@ -180,7 +180,8 @@ handleProduct=(id)=>{
         
                 }/>
                 
-                 <Route path={`store/products/:id`}  render={(props)=> <ProductDetails {...props} handleCart={this.handleCart} product={product}/>} />
+                 <Route path={`/products/:id`}  render={(props)=> <ProductDetails {...props} handleCart={this.handleCart} product={product}/>} />
+                     
          <Route path="/cart" render={()=>
             <div className="cart-items">
                 <h2 className="shoppingTxt">Shopping Cart</h2>

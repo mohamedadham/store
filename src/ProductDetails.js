@@ -33,7 +33,7 @@ import {Link, Switch, Route} from 'react-router-dom'
   
     
  
-console.log(item)
+console.log("aaaaa")
    
   return (
     <div className="App">
